@@ -5,7 +5,9 @@ import numpy as np
 # load model (TOP ONLY)
 model = joblib.load("model.pkl")
 
-st.caption("ML model predicts customer churn based on tenure and monthly changes ")
+st.title("Customer Churn Prediction")
+st.caption("predicting customer churn based on tenure and monthly changes using ML ")
+
 
 tenure = st.slider("Tenure", 0, 72)
 monthly = st.slider("Monthly Charges", 0, 150)
